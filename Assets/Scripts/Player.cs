@@ -5,9 +5,8 @@ using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private UnityEvent _hit;
-
     public bool _collisionCheck = false;
+    [SerializeField] private UnityEvent _hit;
     
     private bool OnCollisionEnter2D(Collision2D collision)
     {

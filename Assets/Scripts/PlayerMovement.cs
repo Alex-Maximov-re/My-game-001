@@ -6,8 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D _rigidbody2D;
-    
-   [SerializeField] private float strafeSpeed;
+    [SerializeField] private float strafeSpeed;
     [SerializeField] private float jumpForce;
 
     protected bool strafeLeft = false;

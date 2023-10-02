@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Git\My-game-001" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Materials" t="Include" />
+        <e p="Prefabs" t="Include" />
+        <e p="Scenes" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="Block.cs" t="Include" />
+          <e p="CollisionEnter.cs" t="Include" />
+          <e p="ColorChanger.cs" t="Include" />
+          <e p="EndPoint.cs" t="Include" />
+          <e p="FollowCamera.cs" t="Include" />
+          <e p="GameEnder.cs" t="Include" />
+          <e p="Movement.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="PlayerMovement.cs" t="Include" />
+          <e p="TargetColorChanger.cs" t="Include" />
+          <e p="WayPointMovement.cs" t="Include" />
+        </e>
+        <e p="Settings" t="Include">
+          <e p="Scenes" t="Include" />
+        </e>
+        <e p="Textures" t="Include" />
+      </e>
+      <e p="My-game-001.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\user\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\user\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_My-game-001.245492029.00" t="ExcludeRecursive" />
+    <e p="C:\Users\user\AppData\Roaming\JetBrains\Rider2020.1\scratches" t="IncludeRecursive" />
+  </component>
+</project>

@@ -13,9 +13,9 @@ public class GameEnder : MonoBehaviour
    [SerializeField] private UnityEvent _hit;
    [SerializeField] private Player _player;
    [SerializeField] private EndPoint _endPoint;
-   
 
-   public void EndGame()
+
+   private void EndGame()
    {
       _movement.enabled = false;
       
