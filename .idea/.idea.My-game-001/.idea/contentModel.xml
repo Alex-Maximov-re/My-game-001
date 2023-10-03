@@ -9,10 +9,9 @@
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Block.cs" t="Include" />
-          <e p="CoinCollisionCheck.cs" t="Include" />
+          <e p="Coin.cs" t="Include" />
           <e p="CollisionEnter.cs" t="Include" />
           <e p="ColorChanger.cs" t="Include" />
-          <e p="EndPoint.cs" t="Include" />
           <e p="FinalPoint.cs" t="Include" />
           <e p="FollowCamera.cs" t="Include" />
           <e p="GameEnder.cs" t="Include" />

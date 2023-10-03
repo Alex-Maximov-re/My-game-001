@@ -2081,7 +2081,7 @@ GameObject:
   - component: {fileID: 1347393503}
   - component: {fileID: 1347393504}
   m_Layer: 0
-  m_Name: EndPoints
+  m_Name: Coins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2116,7 +2116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e085719cef4e243972808999282aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _endPoints:
+  _coins:
   - {fileID: 2059553830}
   - {fileID: 1642703712}
 --- !u!1001 &1358673182
@@ -2691,11 +2691,8 @@ MonoBehaviour:
   _movement: {fileID: 1622335229}
   _levelRestartDelay: 2
   _playerPosition: {fileID: 1622335226}
-  _hit:
-    m_PersistentCalls:
-      m_Calls: []
   _player: {fileID: 1622335228}
-  _endPoints: []
+  _finishTrigger: {fileID: 1347393504}
   _finalPoint: {fileID: 445792477}
 --- !u!4 &1591824409
 Transform:
@@ -2828,7 +2825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9183526213300688273, guid: ea067d3efff3ea748b3b371d9ff5a6a8, type: 3}
       propertyPath: m_Name
-      value: EndPoint
+      value: Coin2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3595,37 +3592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 165b4bea5c80c7b43b89326af361b7fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2108555374
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2108555375}
-  m_Layer: 0
-  m_Name: CheckCoinCollision
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2108555375
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108555374}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 107.13187, y: 7.2794614, z: 0.34927118}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3348746633477055292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3895,7 +3861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9183526213300688273, guid: ea067d3efff3ea748b3b371d9ff5a6a8, type: 3}
       propertyPath: m_Name
-      value: EndPoint
+      value: Coin1
       objectReference: {fileID: 0}
     - target: {fileID: 9183526213300688273, guid: ea067d3efff3ea748b3b371d9ff5a6a8, type: 3}
       propertyPath: m_TagString
@@ -4035,4 +4001,3 @@ SceneRoots:
   - {fileID: 1033352169}
   - {fileID: 644327385}
   - {fileID: 472504805}
-  - {fileID: 2108555375}

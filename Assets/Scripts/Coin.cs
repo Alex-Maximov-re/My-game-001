@@ -5,16 +5,28 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 
-public class EndPoint : MonoBehaviour
+public class Coin : MonoBehaviour
 {
-    [HideInInspector] public bool _endPointCollisionCheck = false;
     [SerializeField] private UnityEvent _coinCollected;
+    
+    public event UnityAction Reached
+    {
+        add => _coinCollected.AddListener(value);
+        remove => _coinCollected.RemoveListener(value);
+    }
+    
+    public bool IsCollected { get; private set; }
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (IsCollected)
+        {
+            return;
+        }
+        
         if (collision.TryGetComponent(out Player player))
         {
-            _endPointCollisionCheck = true;
+            IsCollected = true;
             _coinCollected?.Invoke();
         }
     }

@@ -10,9 +10,8 @@ public class GameEnder : MonoBehaviour
    [SerializeField] private Movement _movement;
    [SerializeField] private float _levelRestartDelay = 2f;
    [SerializeField] private Transform _playerPosition;
-   [SerializeField] private UnityEvent _hit;
    [SerializeField] private Player _player;
-   [SerializeField] private EndPoint[] _endPoints;
+   [SerializeField] private GameFinishTrigger _finishTrigger;
    [SerializeField] private FinalPoint _finalPoint;
 
    private void EndGame()
@@ -41,21 +40,15 @@ public class GameEnder : MonoBehaviour
          EndGame();
       }
 
-
-      for (int i = 0; i < _endPoints.Length; i++)
-      {
-         if (_endPoints[i]._endPointCollisionCheck)
-         {
-            Debug.Log("Вы собрали монетку!");
-            //EndGame();
-         }
-      }
-      
-      
       if (_finalPoint._finalPointCollisionCheck)
       {
          Debug.Log("Ура! Вы выйграли!");
          EndGame();
+      }
+
+      if (_finishTrigger.AllCoinsCollected)
+      {
+         Debug.Log("Ура! Вы собрали все монетки!");
       }
    }
 }
