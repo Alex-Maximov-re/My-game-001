@@ -5,22 +5,20 @@ using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    public bool _collisionCheck = false;
+    [HideInInspector] public bool _collisionCheck = false;
     [SerializeField] private UnityEvent _hit;
     
-    private bool OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         /*if (collision.collider.TryGetComponent(out Block block))
         {
            _hit?.Invoke();     //инициализируем событие
         }*/
         
-        if (collision.collider.tag == "Obstacle")
+        if (collision.collider.tag == "13")
         {
             Debug.Log("Конец игры!");
             _collisionCheck = true;
         }
-
-        return _collisionCheck;
     }
 }

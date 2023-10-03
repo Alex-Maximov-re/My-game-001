@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1666666323707845115}
   - component: {fileID: 840972921004640915}
   - component: {fileID: 6956466948643660222}
+  - component: {fileID: 927847878268482240}
+  - component: {fileID: -641744545348136386}
   m_Layer: 0
   m_Name: EndPoint
   m_TagString: Untagged
@@ -130,3 +132,47 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8828125, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &927847878268482240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9183526213300688273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 165b4bea5c80c7b43b89326af361b7fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _endPointCollisionCheck: 0
+  _renderer: {fileID: 840972921004640915}
+  _reachedColor: {r: 0.07944696, g: 0.9716981, b: 0.17196056, a: 1}
+  _coinCollected:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -641744545348136386}
+        m_TargetAssemblyTypeName: TargetColorChanger, Assembly-CSharp
+        m_MethodName: Change
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-641744545348136386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9183526213300688273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f553504905f24b97112c3176e1d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _renderer: {fileID: 840972921004640915}
+  _targetColor: {r: 0.11836943, g: 0.990566, b: 0.21931648, a: 1}

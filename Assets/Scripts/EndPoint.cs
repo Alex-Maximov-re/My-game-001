@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,21 +7,15 @@ using UnityEngine.Serialization;
 
 public class EndPoint : MonoBehaviour
 {
-    public bool _endPointCollisionCheck = false;
+    [HideInInspector] public bool _endPointCollisionCheck = false;
+    [SerializeField] private UnityEvent _coinCollected;
     
-    private bool OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent<Player>(out Player player))
+        if (collision.TryGetComponent(out Player player))
         {
             _endPointCollisionCheck = true;
+            _coinCollected?.Invoke();
         }
-        
-        /*if (collision.collider.tag == "Obstacle")
-        {
-            Debug.Log("Конец игры!");
-            _collisionCheck = true;
-        }*/
-
-        return _endPointCollisionCheck;
     }
 }
