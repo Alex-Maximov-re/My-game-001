@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 
 public class GameEnder : MonoBehaviour
@@ -11,7 +12,7 @@ public class GameEnder : MonoBehaviour
    [SerializeField] private float _levelRestartDelay = 2f;
    [SerializeField] private Transform _playerPosition;
    [SerializeField] private Player _player;
-   [SerializeField] private GameFinishTrigger _finishTrigger;
+   [SerializeField] private CoinCollectingTrigger _coinTrigger;
    [SerializeField] private FinalPoint _finalPoint;
 
    private void EndGame()
@@ -46,7 +47,7 @@ public class GameEnder : MonoBehaviour
          EndGame();
       }
 
-      if (_finishTrigger.AllCoinsCollected)
+      if (_coinTrigger.AllCoinsCollected)
       {
          Debug.Log("Ура! Вы собрали все монетки!");
       }

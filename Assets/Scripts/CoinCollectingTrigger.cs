@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using Object = UnityEngine.Object;
 
-public class GameFinishTrigger : MonoBehaviour
+public class CoinCollectingTrigger : MonoBehaviour
 {
     [SerializeField] private Coin[] _coins;
     public bool AllCoinsCollected { get; private set; } = false;

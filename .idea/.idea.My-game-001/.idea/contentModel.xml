@@ -10,12 +10,14 @@
         <e p="Scripts" t="Include">
           <e p="Block.cs" t="Include" />
           <e p="Coin.cs" t="Include" />
+          <e p="CoinCollectingTrigger.cs" t="Include" />
           <e p="CollisionEnter.cs" t="Include" />
           <e p="ColorChanger.cs" t="Include" />
           <e p="FinalPoint.cs" t="Include" />
           <e p="FollowCamera.cs" t="Include" />
           <e p="GameEnder.cs" t="Include" />
-          <e p="GameFinishTrigger.cs" t="Include" />
+          <e p="HealthLoser.cs" t="Include" />
+          <e p="HitTrigger.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
