@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     [HideInInspector] public bool _collisionCheck = false;
     [SerializeField] private UnityEvent _hit;
     [SerializeField] private int _healthPoint;
-    
+
     public event UnityAction Hit
     {
         add => _hit.AddListener(value);
@@ -21,15 +21,16 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (IsHit)
+        /*if (IsHit)
         {
             return;
-        }
+        }*/
         
         if (collision.collider.TryGetComponent(out Block block))
         {
             IsHit = true;
-            _hit?.Invoke();     //инициализируем событие
+            //_hit?.Invoke();     //инициализируем событие
+            _healthPoint--;
         }
     }
 

@@ -1845,6 +1845,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2921977171529542081, guid: 3a9d1ac8d2dc4d540a47d38f13f591a6, type: 3}
   m_PrefabInstance: {fileID: 1471949691}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &931238885 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1827186985700101236, guid: 633f4a232f65cfa4ebc91b3c058d4d50, type: 3}
+  m_PrefabInstance: {fileID: 8044864738472341781}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &936912909 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1623159499253627289, guid: 44c125d2895103a4a9a4f7f63ccb72b5, type: 3}
@@ -3122,7 +3127,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2215228040274353467, guid: 633f4a232f65cfa4ebc91b3c058d4d50, type: 3}
   m_PrefabInstance: {fileID: 8044864738472341781}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 931238885}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 230d83e5325d1cc42a2050e9e1190cbc, type: 3}
@@ -3133,12 +3138,25 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7027442850519644153, guid: 633f4a232f65cfa4ebc91b3c058d4d50, type: 3}
   m_PrefabInstance: {fileID: 8044864738472341781}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 931238885}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 999befe63b273c443a33285e33b0ea9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1622335234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931238885}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875c40b22c609fa49b293310f40dc537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 1622335228}
 --- !u!4 &1642703710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1666666323707845115, guid: ea067d3efff3ea748b3b371d9ff5a6a8, type: 3}
@@ -4140,9 +4158,21 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2215228040274353467, guid: 633f4a232f65cfa4ebc91b3c058d4d50, type: 3}
+      propertyPath: _healthPoint
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2215228040274353467, guid: 633f4a232f65cfa4ebc91b3c058d4d50, type: 3}
       propertyPath: _hit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: -5767662627174669532, guid: 633f4a232f65cfa4ebc91b3c058d4d50, type: 3}
+    - target: {fileID: 2215228040274353467, guid: 633f4a232f65cfa4ebc91b3c058d4d50, type: 3}
+      propertyPath: _hit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Change
+      objectReference: {fileID: 0}
+    - target: {fileID: 2215228040274353467, guid: 633f4a232f65cfa4ebc91b3c058d4d50, type: 3}
+      propertyPath: _hit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HealthLoser, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3743539078558747271, guid: 633f4a232f65cfa4ebc91b3c058d4d50, type: 3}
       propertyPath: m_LocalPosition.x
       value: 61.13
@@ -4186,7 +4216,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1827186985700101236, guid: 633f4a232f65cfa4ebc91b3c058d4d50, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1622335234}
   m_SourcePrefab: {fileID: 100100000, guid: 633f4a232f65cfa4ebc91b3c058d4d50, type: 3}
 --- !u!1001 &8090484427331460719
 PrefabInstance:

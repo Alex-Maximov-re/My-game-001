@@ -51,5 +51,11 @@ public class GameEnder : MonoBehaviour
       {
          Debug.Log("Ура! Вы собрали все монетки!");
       }
+
+      if (_player.HealthPoint <= 0)
+      {
+         Debug.Log("О нет, у вас кончились очки здоровья!");
+         EndGame();
+      }
    }
 }
